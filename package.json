@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/morgan": "^1.9.3",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1",
+    "mongodb": "^4.5.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.4"
+  },
+  "name": "fantasybetsbe",
+  "description": "This will collect and share bet information for the system this is a change",
+  "version": "1.0.0",
+  "main": "source/server.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon source/server.ts",
+    "build": "rm -rf build/ && prettier --write source/ && tsc",
+    "startup": "brew services start mongodb-community@5.0",
+    "shutdown": "brew services stop mongodb-community@5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goDawgs18/FantasyBetsBE.git"
+  },
+  "author": "Alex Castro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goDawgs18/FantasyBetsBE/issues"
+  },
+  "homepage": "https://github.com/goDawgs18/FantasyBetsBE#readme"
+}
